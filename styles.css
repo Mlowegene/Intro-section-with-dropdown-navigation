@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Almost-White);
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    margin: .5rem;
+    width: 6rem;
+    height: 1.5rem;
+}
+
+.logo img {
+    width: 4.5rem;
+    height: 1.5rem;
+}
+
+.about {
+    width: 20rem;
+    height: .8rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Medium-Gray);
+    margin: .5rem;
+}
+
+.user-section {
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: .5rem;
+    margin-left: 45rem;
+    color: var(--Medium-Gray);
+}
+
+.user-section p{
+    font-size: .8rem;
+}
+
+.user-section button {
+    width: 4.7rem;
+    height: 2rem;
+    font-size: .8rem;
+    border: 1px solid var(--Medium-Gray);
+    border-radius: .7rem;
+    color: var(--Medium-Gray);
+    background-color: var(--Almost-White);
+}
+
