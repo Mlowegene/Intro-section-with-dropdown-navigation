@@ -39,7 +39,7 @@ header {
     height: 1.5rem;
 }
 
-.about {
+.links {
     width: 20rem;
     height: .8rem;
     font-size: .8rem;
@@ -115,6 +115,7 @@ header {
     border-radius: 10px;
     background: var(--Almost-Black);
     border: none;
+    cursor: pointer;
 }
 
 .footer {
@@ -135,5 +136,80 @@ header {
     width: 65%;
     height: 85%;
     object-fit:contain;
+}
+
+/* -----------Active state------------------ */
+
+.desc-part button:hover {
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid var(--Almost-Black);
+}
+
+.about:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+
+.user-section button:hover {
+    cursor: pointer;
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid var(--Almost-Black);
+}
+
+.user-section p:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+
+.lists {
+    /* position: relative; */
+}
+
+.feature-list {
+    width: 7.3rem;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--Almost-White);
+    box-shadow: 5px 5px 25px -9px var(--Medium-Gray);
+    border-radius: 10px;
+    margin-left: 2rem;
+    position: absolute;
+    top: 55px;
+    left: 45px;
+}
+
+.feature-list li {
+    list-style: none;
+    font-size: .7rem;
+    color: var(--Medium-Gray);
+    padding: .3rem 0;
+    
+}
+
+.feature-list li img {
+    margin-right: .6rem;
+}
+
+.company-list {
+    width: 5.5rem;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--Almost-White);
+    box-shadow: 5px 5px 25px -9px var(--Medium-Gray);
+    border-radius: 10px;
+    margin-left: 2rem;
+    position: absolute;
+    top: 55px;
+    left: 170px;
+}
+
+
+.company-list li {
+    list-style: none;
+    font-size: .7rem;
+    color: var(--Medium-Gray);
+    padding: .3rem 0;
 }
 
