@@ -164,10 +164,6 @@ header {
     color: var(--Almost-Black);
 }
 
-.lists {
-    /* position: relative; */
-}
-
 .feature-list {
     width: 7.3rem;
     height: auto;
@@ -179,6 +175,11 @@ header {
     position: absolute;
     top: 55px;
     left: 45px;
+    display: none;
+}
+
+.feature-list.active {
+    display: block;
 }
 
 .feature-list li {
@@ -204,6 +205,11 @@ header {
     position: absolute;
     top: 55px;
     left: 170px;
+    display: none;
+}
+
+.company-list.active {
+    display: block;
 }
 
 
@@ -214,3 +220,18 @@ header {
     padding: .3rem 0;
 }
 
+.features:hover, .company:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+
+
+/* ------------------dropdown icon--------------------------------- */
+.dropIcon {
+    transition: transform 0.5s ease-in;
+}
+
+
+.features.active .dropIcon {
+    transform: rotate(180deg);
+}
