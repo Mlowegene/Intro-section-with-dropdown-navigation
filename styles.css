@@ -85,6 +85,10 @@ header {
     background-color: var(--Almost-White);
 }
 
+.icon-menu{
+    display: none;
+}
+
 /* ---------------------content section---------------- */
 
 
@@ -93,6 +97,7 @@ header {
     padding-top: 4.7rem;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    margin-left: 2rem;
 }
 
 .desc-part {
@@ -238,6 +243,10 @@ header {
     color: var(--Almost-Black);
 }
 
+.icon-close-menu {
+    display: none;
+}
+
 
 /* ------------------dropdown icon--------------------------------- */
 .dropIcon {
@@ -253,6 +262,10 @@ header {
 /* =====================media queries============================= */
 
 @media screen and (max-width: 375px) {
+
+    /* body {
+        overflow: hidden;
+    } */
 
     .container {
         width: 100%;
@@ -289,21 +302,21 @@ header {
     }
 
     .user-section {
-        content: url("./images/icon-menu.svg");
-        width: 1.7rem;
-        height: 1rem;
-        margin-top: .2rem;
-        margin-left: 12rem;
-
+        display: none;
     }
 
+    .icon-menu {
+        /* border: 1px solid red; */
+        display: block;
+        margin-left: 13rem;
+    }
 
     .desc {
-        width: 100%;
+        width: 100vw;
         padding-top: 1rem;
+        margin-left: 0;
         grid-row: 3 / 4;
         grid-column: 1 / 2;
-
     }
 
     .desc-part {
@@ -319,7 +332,7 @@ header {
 
     .desc-part h1 {
         font-weight: 700;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         color: var(--Almost-Black);
         margin: 1rem 0;
 
@@ -327,8 +340,7 @@ header {
 
     .desc-part p {
         color: var(--Medium-Gray);
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: .8rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
 
@@ -368,4 +380,139 @@ header {
         height: 100%;
     }
 
-}
+    .menu-list-component{
+        height: 41rem;
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .menu-list-component.showHide {
+        display: block;
+    }
+
+    .transparent-side {
+        height: 41rem;
+        width: 8.2rem;
+        background-color: var(--Almost-Black);
+        opacity: .6;
+    }
+
+    .menu-list {
+        height: 40.9rem;
+        width: 15rem;
+        background-color: var(--Almost-White);
+        position: absolute;
+        top: 0;
+        left: 8.2rem;
+    }
+
+    .icon-close-menu {
+        display: flex;
+        justify-content:flex-end;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .icon-close-menu img {
+        width: 1.5rem; 
+    }
+
+    .links-list {
+        width: 10rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: .5rem;
+        margin-top: 2rem;
+    }
+
+    .feature-list-mobile {
+        padding: 0 1rem;
+        margin-left: 1rem;
+        display: none;
+    }
+
+    .feature-list-mobile li {
+        list-style: none;
+        font-size: .8rem;
+        color: var(--Medium-Gray);
+        padding: .3rem 0;
+    }
+
+    .feature-list-mobile.active {
+        display: block;
+    }
+
+    .company-list-mobile {
+        padding: 0 1rem;
+        margin-left: 1rem;
+        display: none;
+    }
+
+    .company-list-mobile li {
+        list-style: none;
+        font-size: .8rem;
+        color: var(--Medium-Gray);
+        padding: .3rem 0;
+    }
+    .company-list-mobile.active {
+        display: block;
+    }
+
+    .links-list p {
+        padding: 12px;
+        font-size: .8rem;
+        color: var(--Medium-Gray);
+    }
+
+    .links-list p img {
+        margin-left: .5rem;
+    }
+
+    .feature-list {
+        width: 7.3rem;
+        height: auto;
+        padding: 1rem;
+        background-color: var(--Almost-White);
+        box-shadow: 5px 5px 25px -9px var(--Medium-Gray);
+        border-radius: 10px;
+        margin-left: 2rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* display: none; */
+    }
+
+
+
+    .user-section-mini{
+        width: 15rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        color: var(--Medium-Gray);
+    }
+
+    .user-section-mini p {
+        font-size: 1rem;
+        margin-bottom: .8rem;
+        cursor: pointer;
+    }
+
+    .user-section-mini button {
+        width: 12rem;
+        height: 2.2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: 1px solid var(--Medium-Gray);
+        border-radius: .7rem;
+        color: var(--Medium-Gray);
+        background-color: var(--Almost-White);
+    }
